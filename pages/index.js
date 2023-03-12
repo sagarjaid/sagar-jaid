@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </nav>
       <div>
-        <ul className="text-sm flex gap-4 justify-around p-4 sm:hidden">
+        <ul className="text-sm flex gap-4 justify-around p-2 sm:hidden">
           <li>home</li>
           <li>about</li>
           <li>work</li>

@@ -1,0 +1,126 @@
+@font-face {
+  font-family: Cerebri sans-bold-italic;
+  src: url(./fontfiles/Cerebri\ Sans\ Bold\ Italic.otf);
+}
+@font-face {
+  font-family: Cerebri sans-bold;
+  src: url(./fontfiles/Cerebri\ Sans\ Bold.otf);
+}
+
+@font-face {
+  font-family: Cerebri sans-book-italic;
+  src: url(./fontfiles/Cerebri\ Sans\ Book\ Italic.otf);
+}
+
+@font-face {
+  font-family: Cerebri sans-book;
+  src: url(./fontfiles/Cerebri\ Sans\ Book.otf);
+}
+
+@font-face {
+  font-family: Cerebri sans-extrabold-italic;
+  src: url(./fontfiles/Cerebri\ Sans\ ExtraBold\ Italic.otf);
+}
+@font-face {
+  font-family: Cerebri sans-extrabold;
+  src: url(./fontfiles/Cerebri\ Sans\ ExtraBold.otf);
+}
+
+@font-face {
+  font-family: Cerebri sans-heavy-italic;
+  src: url(./fontfiles/Cerebri\ Sans\ Heavy\ Italic.otf);
+}
+
+@font-face {
+  font-family: Cerebri sans-heavy;
+  src: url(./fontfiles/Cerebri\ Sans\ Heavy.otf);
+}
+
+@font-face {
+  font-family: Cerebri sans-italic;
+  src: url(./fontfiles/Cerebri\ Sans\ Italic.otf);
+}
+
+@font-face {
+  font-family: Cerebri sans-light;
+  src: url(./fontfiles/Cerebri\ Sans\ Light.otf);
+}
+
+@font-face {
+  font-family: Cerebri sans-light-italic;
+  src: url(./fontfiles/Cerebri\ Sans\ LightItalic.otf);
+}
+@font-face {
+  font-family: Cerebri sans-medium-italic;
+  src: url(./fontfiles/Cerebri\ Sans\ Medium\ Italic.otf);
+}
+@font-face {
+  font-family: Cerebri sans-medium;
+  src: url(./fontfiles/Cerebri\ Sans\ Medium.otf);
+}
+@font-face {
+  font-family: Cerebri sans;
+  src: url(./fontfiles/Cerebri\ Sans\ Regular.otf);
+}
+
+@font-face {
+  font-family: Cerebri sans-semibold;
+  src: url(./fontfiles/Cerebri\ Sans\ SemiBold.otf);
+}
+
+@font-face {
+  font-family: Cerebri sans-semibold-italic;
+  src: url(./fontfiles/Cerebri\ Sans\ SemiBoldItalic.otf);
+}
+
+
+
+
+
+/* fontweight */
+
+.fw-100{
+  font-weight: 100;
+}
+.fw-200{
+  font-weight: 200;
+}
+.fw-300{
+  font-weight: 300;
+}
+.fw-400{
+  font-weight: 400;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-700{
+  font-weight: 700;
+}
+.fw-800{
+  font-weight: 800;
+}
+.fw-900{
+  font-weight: 900;
+}
+
+
+
+/*  */
+
+
+
+/* font Size  */
+.fs-7{
+  font-size: 0.9rem !important;
+}
+
+
+/*  */
+
+
+
+

@@ -44,7 +44,9 @@ export default function Home() {
         <nav className="text-white bg-black ">
           <div className="max-w-6xl m-auto flex justify-between items-center p-4">
             <div className="flex justify-start gap-4 items-center">
-              <img className="w-[120px]" src="./sagarjaid-logo-v1.png" />
+              <a href="/">
+                <img className="w-[120px]" src="./sagarjaid-logo-v1.png" />
+              </a>
               <ul className=" hidden text-sm sm:flex gap-4 justify-around">
                 <li>
                   <a href="/">home</a>
@@ -59,10 +61,10 @@ export default function Home() {
             </div>
             <div className="flex justify-around items-center gap-4">
               <a href="https://www.linkedin.com/in/sagarjaid/" target="_blank">
-                <img className="w-5 -mt-1" src="./linkedin-svg.svg" />
+                <img className="w-4 -mt-1" src="./linkedin-svg.svg" />
               </a>
               <a href="https://twitter.com/Jaid_Sagar" target="_blank">
-                <img className="w-5" src="./twitter-svg.svg" />
+                <img className="w-4" src="./twitter-svg.svg" />
               </a>
             </div>
           </div>

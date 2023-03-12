@@ -22,24 +22,11 @@ export default function Home() {
           <div className="flex justify-around items-center gap-4">
             <img className="w-5 -mt-1" src="./linkedin-svg.svg" />
             <img className="w-5" src="./twitter-svg.svg" />
-            {/* <svg
-              className="w-6 sm:hidden"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                clipRule="evenodd"
-                fillRule="evenodd"
-                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
-              />
-            </svg> */}
           </div>
         </div>
       </nav>
       <div>
-        <ul className="text-sm flex gap-4 justify-around sm:hidden">
+        <ul className="text-sm flex gap-4 justify-around p-4 sm:hidden">
           <li>home</li>
           <li>about</li>
           <li>work</li>
@@ -55,7 +42,7 @@ export default function Home() {
               src="./sagar-cover-v1.png"
             />
           </div>
-          <div className="flex flex-col justify-center gap-6 sm:w-[50%] px-4">
+          <div className="flex flex-col justify-center gap-6 sm:w-[50%] mb-10 sm:mb-0 px-4">
             <h2 className="text-4xl font-bold">Sagar Jaid</h2>
             <p className="text-sm">
               building{" "}

@@ -3,9 +3,47 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [displayDate, setDisplayDate] = useState("");
   const [toggle, SetToggle] = useState(false);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const getFormattedDate = (date) => {
+      const days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      const dayName = days[date.getDay()];
+      const monthName = months[date.getMonth()];
+      const day = date.getDate();
+      const year = date.getFullYear();
+
+      return `${dayName}, ${monthName} ${day}, ${year}`;
+    };
+    const date = new Date();
+    const formattedDate = getFormattedDate(date);
+    console.log(formattedDate);
+    setDisplayDate(formattedDate);
+  }, []);
 
   return (
     <div>
@@ -13,49 +51,29 @@ export default function Home() {
         <div className="max-w-6xl m-auto flex justify-between items-center p-6">
           <div className="flex justify-start gap-4 items-center">
             <img className="w-[120px]" src="./sagarjaid-logo-v1.png" />
-            <ul className=" hidden text-sm sm:flex gap-4 justify-around">
-              <li>home</li>
-              <li>about</li>
-              <li>work</li>
+            <ul className="text-sm flex gap-4 justify-around">
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
             </ul>
           </div>
           <div className="flex justify-around items-center gap-4">
+            <div className="text-sm">{displayDate}</div>
             <img className="w-5 -mt-1" src="./linkedin-svg.svg" />
             <img className="w-5" src="./twitter-svg.svg" />
-            {/* <svg
-              className="w-6 sm:hidden"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                clipRule="evenodd"
-                fillRule="evenodd"
-                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
-              />
-            </svg> */}
           </div>
         </div>
       </nav>
-      <div>
-        <ul className="text-sm flex gap-4 justify-around sm:hidden">
-          <li>home</li>
-          <li>about</li>
-          <li>work</li>
-        </ul>
-      </div>
-
       {/* Hero */}
       <div>
-        <div className="flex flex-col sm:flex-row justify-between gap-6 items-center">
-          <div className="sm:w-[50%] flex justify-center">
+        <div className="flex justify-between gap-6 items-center">
+          <div className="w-[50%] flex justify-center">
             <img
-              className="w-full object-cover sm:h-screen"
+              className="w-full object-cover h-screen"
               src="./sagar-cover-v1.png"
             />
           </div>
-          <div className="flex flex-col justify-center gap-6 sm:w-[50%] px-4">
+          <div className="flex flex-col justify-center gap-6 w-[50%]">
             <h2 className="text-4xl font-bold">Sagar Jaid</h2>
             <p className="text-sm">
               building{" "}
@@ -66,10 +84,10 @@ export default function Home() {
               — Ai career discovery & pathfinder
             </p>
             <p className="text-sm">
-              A Software Engineer, I talk about startups, digital marketing &
-              life.
+              A Software Engineer, I talk about Startups, Digital Marketing &
+              Life.
             </p>
-            <p className="text-sm">books I love & practice {">"} </p>
+            <p className="text-sm">I like coffee over tea in meetings…</p>
             <button className="bg-black w-fit text-sm text-white py-2 gap-2 px-3 rounded-md flex justify-between items-center">
               <svg
                 className="w-4"
@@ -90,7 +108,7 @@ export default function Home() {
         </div>
         <div>
           <svg
-            className="w-10 p-2 rounded-md fixed bottom-4 right-4 bg-blue-500"
+            className="w-10 p-2 rounded-md fixed bottom-4 right-4 bg-blue-600"
             fill="none"
             stroke="white"
             strokeWidth={1.5}
@@ -106,6 +124,24 @@ export default function Home() {
           </svg>
         </div>
       </div>
+
+      {/* numbers
+      <div className="max-w-6xl m-auto px-4">
+        <div className="flex justify-around items-center py-8 text-white bg-black rounded-md">
+          <div className="flex flex-col gap-2 justify-between">
+            <span className="text-5xl">20+</span>
+            <span>Web and App Dev Projects Done</span>
+          </div>
+          <div className="flex flex-col gap-2 justify-between">
+            <span className="text-5xl">2m+</span>
+            <span>Blog Post Views</span>
+          </div>
+          <div className="flex flex-col gap-2 justify-between">
+            <span className="text-5xl">12+</span>
+            <span>WordPress & Shopify Website Done</span>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 }

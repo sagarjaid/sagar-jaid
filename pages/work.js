@@ -42,7 +42,7 @@ export default function Home() {
       </Head>
       <div>
         <nav className="text-white bg-black ">
-          <div className="max-w-6xl m-auto flex justify-between items-center p-4">
+          <div className=" m-auto flex justify-between items-center p-4 sm:px-6">
             <div className="flex justify-start gap-4 items-center">
               <a href="/">
                 <img className="w-[120px]" src="./sagarjaid-logo-v1.png" />
